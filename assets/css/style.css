@@ -95,8 +95,8 @@ section {
   position: relative;
 }
 .mS {
-  width: 585px;
-  height:462px;
+  width: 100%;
+  height:100%;
 }
 
 h1 {
@@ -127,6 +127,8 @@ article {
   display: flex;
   flex-wrap: wrap;
   height:400px;
+  width:100%;
+  
 }
 .trending {
   width: 100%;
@@ -380,6 +382,7 @@ li {
   article{
     padding-left: 5%;
     height:850px;
+    box-sizing: border-box;
     justify-content: flex-start;
   }
   .trending{

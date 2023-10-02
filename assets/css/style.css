@@ -110,6 +110,7 @@ h1 {
   letter-spacing: -0.05em;
   font-size: 6em;
   padding-bottom: 30px;
+  z-index: 1;
 }
 h2 {
   font-size: 1.3em;
@@ -312,7 +313,7 @@ hr {
 }
 @keyframes boomerang{
 0%{
-  
+
 }
 }
 

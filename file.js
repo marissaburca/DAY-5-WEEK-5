@@ -29,14 +29,13 @@ setInterval(emme, 200);
 const emme = () => {
   const elements = Array.from(document.querySelectorAll("svg > g > g > g[opacity='1']"));
   const shuffledElements = elements.sort(() => Math.random() - 0.5);
-  const selectedElements = shuffledElements.slice(0, 70);
+  const selectedElements = shuffledElements.slice(0, 30);
 
   anime({
     targets: selectedElements,
     opacity: [1, 0],
-    duration: 3000,
-    delay: anime.stagger(3000 / selectedElements.length),
-    
+    duration: 8000,
+    delay: anime.stagger(8000 / selectedElements.length),
     direction: "normal",
     loop: false
   });
@@ -45,13 +44,12 @@ const emme = () => {
     targets: elements.filter((element) => !selectedElements.includes(element)),
     opacity: [0, 1],
     duration: 4000,
-    delay: anime.stagger(1000 / (elements.length - selectedElements.length)),
-   
+    delay: anime.stagger(4000 / (elements.length - selectedElements.length)),
     direction: "normal",
     loop: true
   });
 };
 
-setInterval(emme, 100);
+setInterval(emme, 200);
 
 

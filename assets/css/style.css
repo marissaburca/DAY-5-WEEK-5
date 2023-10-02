@@ -239,9 +239,15 @@ h4 {
   width: 55%;
   flex-direction: column;
 }
+.laterals{ 
+  position: relative;
+}
 .small {
   width: 30%;
   margin-left: 5%;
+  position: sticky;
+  top: 70px;
+
   
   
 }
